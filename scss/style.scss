@@ -1,6 +1,11 @@
-$bg-img: url(../images/pink-background.jpg);
+$bg-img: url(../images/solid-color-image.png);
 
 $form-main-col: #e77c8e;
+
+$main-font: 'Roboto Slab',
+sans-serif;
+
+$text-font-col: #2c3e50;
 
 main {
     background-image: $bg-img;
@@ -17,42 +22,39 @@ main {
 h1 {
     font-size: 42px;
     line-height: 1.1;
-    padding: 2.5rem 12px 0rem 15px;
-    font-family: 'Roboto Slab', sans-serif;
+    padding: 2.5rem 12px 0rem 10px;
+    font-family: $main-font;
     letter-spacing: -.5px;
     margin-bottom: 1.5rem;
     word-break: break-word;
     margin: 0 40px 20px 40px;
     font-weight: bolder;
-    // font-size: 32pt;
-    // color: #503D42;
-    // padding-top: 40px;
-    // padding-bottom: 40px;
-    // font-weight: bolder;
-    // margin: 20px 40px 20px 40px;
+    color: $text-font-col;
 }
 
 h2 {
     font-size: 30px;
-    padding: 5px 12px 12px 15px;
-    font-family: 'Roboto Slab', sans-serif;
+    padding: 5px 12px 12px 10px;
+    font-family: $main-font;
     letter-spacing: .5px;
     font-weight: bold;
     margin: 40px 40px 20px 40px;
+    color: $text-font-col;
 }
 
 h3 {
     font-size: 25px;
-    padding: 5px 12px 20px 5px;
+    padding: 5px 12px 20px 10px;
     margin: 40px 40px 20px 40px;
     letter-spacing: .5px;
     font-weight: bold;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: $main-font;
+    color: $text-font-col;
 }
 
 p {
     font-size: 22px;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: $main-font;
     padding: 12px;
     color: #2c3e50;
     line-height: 1.5;
@@ -72,28 +74,42 @@ em {
 
 a {
     font-size: 22px;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: $main-font;
+    color: $text-font-col;
 }
+
+ul {}
 
 li {
     font-size: 20px;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: $main-font;
 }
 
-.navbar li {
+nav ul {
     background-color: #f0c9cf;
-    font-family: 'Roboto Slab', sans-serif;
-    padding: 12px;
-    border: 1px solid lavender;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.navbar li a {
-    text-decoration: none;
+nav li {
+
+    padding: 20px;
+    display: flex;
+    margin: 5px 5px 5px 5px;
 }
 
 .current-page {
-    text-decoration: underline;
+    border: 2px solid #d55d71;
 }
+
+nav a {
+    color: #d55d71;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 
 .list-group {
     padding-bottom: 3rem;
@@ -133,6 +149,7 @@ footer {
     text-align: center;
     object-fit: cover;
     width: 100%;
+    margin: 20px;
     max-height: 100%;
 }
 
@@ -157,23 +174,27 @@ footer {
     /* Center container */
     margin: 0 auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
 }
 
 .flex {
     /* images display inline by default and act like text. We want them to act like divs, so display block */
     display: flex;
+    flex-direction: column;
     /* our width setting for mobile, one image per line */
     flex-basis: 100%;
-    min-width: 100px;
+    width: 80%;
     height: auto;
     /* provide some space between our images */
-    margin: 10px;
+    margin: 5px;
     border: 3px dashed #ADD8E6;
     box-shadow: 3px 3px 8px 0px rgba(194, 156, 192, 1.0);
     /* ensure padding doesn't cause images to wrap, it should be within the width rather than in addition */
     box-sizing: border-box;
 }
+
+.text-with-img {}
 
 @media only screen and (min-width: 640px) {
     .flex {
@@ -202,13 +223,14 @@ footer {
     }
 }
 
-.text {
-    padding: 20px;
-}
+// .text {
+//     padding: 20px;
+// }
 
 @media screen and (prefers-reduced-motion: no-preference) {
     .cover-img {
-        animation: drop-in 2000ms;
+        opacity: 0.4;
+        // animation: drop-in 2000ms;
     }
 
     @keyframes drop-in {
@@ -226,12 +248,29 @@ footer {
     }
 }
 
-.cover {
-    padding: 20px 0 0 0;
+.wrapper {
+    position: relative;
+    text-align: center;
+    color: #503D42;
+    font-size: 80px;
+    font-weight: bold;
 }
 
 .cover-img {
-    max-width: 400px;
+    width: 100%;
+    height: 750px;
+    opacity: 0.3;
+}
+
+.centered {
+    width: 100%;
+    padding: 25px 0px 25px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: #d55d71;
 }
 
 /* Add a hover style to your images */
@@ -294,6 +333,7 @@ img:nth-child(3n+0):hover {
 
 .secondaryTitle {
     color: #2C3E50;
+    font-size: 1em;
 }
 
 .name {
@@ -304,7 +344,7 @@ img:nth-child(3n+0):hover {
 .name:hover {
     border-bottom: 5px solid $form-main-col;
     height: 30px;
-    width: 380px;
+    width: 280px;
     transition: ease 0.5s;
 }
 
@@ -316,7 +356,7 @@ img:nth-child(3n+0):hover {
 .email:hover {
     border-bottom: 5px solid $form-main-col;
     height: 30px;
-    width: 380px;
+    width: 280px;
     transition: ease 0.5s;
 }
 
@@ -329,7 +369,7 @@ img:nth-child(3n+0):hover {
 .message:hover {
     border-bottom: 5px solid $form-main-col;
     height: 12em;
-    width: 380px;
+    width: 280px;
     transition: ease 0.5s;
 }
 
@@ -399,7 +439,7 @@ img:nth-child(3n+0):hover {
     }
 }
 
-.benefits li {
+li {
     list-style-type: circle;
     font-size: 22px;
     font-family: 'Roboto Slab',
@@ -409,4 +449,28 @@ img:nth-child(3n+0):hover {
     text-align: justify;
     letter-spacing: 0.5px;
     margin: 0 40px 0 70px;
+}
+
+// Skip to main content
+a.skip {
+    color: #d55d71;
+    background-color: #efdede;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: -500px;
+    font-size: 15px;
+}
+
+a.skip:link {
+    text-decoration: none;
+}
+
+a.skip:focus {
+    position: absolute;
+    top: 50px;
+    left: 0px;
 }
