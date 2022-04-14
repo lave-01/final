@@ -5,7 +5,7 @@ $form-main-col: #e77c8e;
 $main-font: 'Roboto Slab',
 sans-serif;
 
-$text-font-col: #2c3e50;
+$text-font-col: #090a0b;
 
 main {
     background-image: $bg-img;
@@ -54,7 +54,7 @@ h3 {
 p {
     font-family: $main-font;
     padding: 12px;
-    color: #2c3e50;
+    color: $text-font-col;
     line-height: 1.5;
     text-align: justify;
     letter-spacing: 0.5px;
@@ -80,7 +80,7 @@ li {
     font-family: 'Roboto Slab',
         sans-serif;
     padding: 12px;
-    color: #2c3e50;
+    color: $text-font-col;
     text-align: justify;
     letter-spacing: 0.5px;
     margin: 0 40px 0 70px;
@@ -183,7 +183,12 @@ img:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 60px;
-    color: #191818;
+    background-color: #e3b4b8;
+    color: #8e303f;
+}
+
+#skip {
+    background-image: $bg-img;
 }
 
 

@@ -18,7 +18,7 @@ h1 {
   word-break: break-word;
   margin: 0 40px 20px 40px;
   font-weight: bolder;
-  color: #2c3e50;
+  color: #090a0b;
 }
 
 h2 {
@@ -27,7 +27,7 @@ h2 {
   letter-spacing: .5px;
   font-weight: bold;
   margin: 40px 40px 20px 40px;
-  color: #2c3e50;
+  color: #090a0b;
 }
 
 h3 {
@@ -36,13 +36,13 @@ h3 {
   letter-spacing: .5px;
   font-weight: bold;
   font-family: "Roboto Slab", sans-serif;
-  color: #2c3e50;
+  color: #090a0b;
 }
 
 p {
   font-family: "Roboto Slab", sans-serif;
   padding: 12px;
-  color: #2c3e50;
+  color: #090a0b;
   line-height: 1.5;
   text-align: justify;
   letter-spacing: 0.5px;
@@ -60,14 +60,14 @@ em {
 
 a {
   font-family: "Roboto Slab", sans-serif;
-  color: #2c3e50;
+  color: #090a0b;
 }
 
 li {
   list-style-type: circle;
   font-family: 'Roboto Slab', sans-serif;
   padding: 12px;
-  color: #2c3e50;
+  color: #090a0b;
   text-align: justify;
   letter-spacing: 0.5px;
   margin: 0 40px 0 70px;
@@ -173,7 +173,12 @@ img:hover {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 60px;
-  color: #191818;
+  background-color: #e3b4b8;
+  color: #8e303f;
+}
+
+#skip {
+  background-image: url(../images/solid-color-image.png);
 }
 
 a.skip {
