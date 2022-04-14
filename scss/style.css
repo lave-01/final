@@ -74,7 +74,7 @@ li {
 }
 
 nav ul {
-  background-color: #f0c9cf;
+  background-color: #e3b4b8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,11 +98,11 @@ nav li {
 }
 
 .current-page {
-  border: 2px solid #d55d71;
+  border: 2px solid #8d3846;
 }
 
 nav a {
-  color: #d55d71;
+  color: #8e303f;
   font-size: 22px;
   font-weight: bold;
   text-decoration: none;
@@ -173,11 +173,11 @@ img:hover {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 60px;
-  color: #d55d71;
+  color: #FFC0CB;
 }
 
 a.skip {
-  color: #d55d71;
+  color: #8d3846;
   background-color: #efdede;
   padding: 6px;
   -webkit-transition: top 1s ease-out;
@@ -556,7 +556,7 @@ a.skip:focus {
 .submit {
   width: 200px;
   color: white;
-  background-color: #e77c8e;
+  background-color: #8d3846;
   font-size: 20px;
 }
 
