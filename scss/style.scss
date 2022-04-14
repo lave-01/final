@@ -387,11 +387,12 @@ a.skip:focus {
 }
 
 .flip-card-front {
-    background-color: #bbb;
     color: black;
+    background-color: $bg-col;
 }
 
 .flip-card-back {
+    background-color: $bg-col;
     color: white;
     transform: rotateY(180deg);
     text-align: center;

@@ -402,11 +402,12 @@ a.skip:focus {
 }
 
 .flip-card-front {
-  background-color: #bbb;
   color: black;
+  background-color: #f2dce1;
 }
 
 .flip-card-back {
+  background-color: #f2dce1;
   color: white;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
