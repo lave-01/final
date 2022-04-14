@@ -1,5 +1,5 @@
 $bg-img: url(../images/solid-color-image.png);
-$bg-col: #eeb8c3;
+$bg-col: #f2dce1;
 $form-main-col: #e77c8e;
 
 $main-font: 'Roboto Slab',
@@ -159,7 +159,7 @@ img:hover {
 }
 
 #main {
-    background-color: #fff;
+    background-color: $bg-col;
 }
 
 

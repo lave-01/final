@@ -1,6 +1,6 @@
 main {
   background-image: url(../images/solid-color-image.png);
-  background-color: #eeb8c3;
+  background-color: #f2dce1;
   -webkit-filter: grayscale(5%);
           filter: grayscale(5%);
   background-position: center;
@@ -138,7 +138,7 @@ img:hover {
 }
 
 #main {
-  background-color: #fff;
+  background-color: #f2dce1;
 }
 
 .cover-img {
@@ -603,7 +603,7 @@ a.skip:focus {
 @media only screen and (min-width: 300px) {
   main {
     background-image: url(../images/solid-color-image.png);
-    background-color: #eeb8c3;
+    background-color: #f2dce1;
     -webkit-filter: grayscale(5%);
             filter: grayscale(5%);
     background-position: center;
