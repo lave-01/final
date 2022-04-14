@@ -9,6 +9,7 @@ $text-font-col: #090a0b;
 
 main {
     background-image: $bg-img;
+    background-color: $bg-col;
     filter: grayscale(5%);
     background-position: center;
     background-size: cover;
@@ -563,6 +564,7 @@ a.skip:focus {
 @media only screen and (min-width: 300px) {
     main {
         background-image: $bg-img;
+        background-color: $bg-col;
         filter: grayscale(5%);
         background-position: center;
         background-size: cover;

@@ -1,5 +1,6 @@
 main {
   background-image: url(../images/solid-color-image.png);
+  background-color: #eeb8c3;
   -webkit-filter: grayscale(5%);
           filter: grayscale(5%);
   background-position: center;
@@ -598,6 +599,7 @@ a.skip:focus {
 @media only screen and (min-width: 300px) {
   main {
     background-image: url(../images/solid-color-image.png);
+    background-color: #eeb8c3;
     -webkit-filter: grayscale(5%);
             filter: grayscale(5%);
     background-position: center;
