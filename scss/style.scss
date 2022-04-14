@@ -277,6 +277,7 @@ a.skip:focus {
 
 .content {
     grid-area: content;
+    background-color: $bg-col;
 }
 
 .header {
@@ -405,6 +406,7 @@ a.skip:focus {
 .flip-card-text {
     // width: 90%;
     text-align: center;
+    overflow: auto;
 }
 
 .box {
