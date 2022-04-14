@@ -177,6 +177,10 @@ img:hover {
   color: #8e303f;
 }
 
+.hidden {
+  display: none;
+}
+
 a.skip {
   color: #8d3846;
   background-color: #efdede;
