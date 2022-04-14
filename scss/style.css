@@ -177,11 +177,6 @@ img:hover {
   color: #8e303f;
 }
 
-#skip {
-  background-image: url(../images/solid-color-image.png);
-  background-color: #eeb8c3;
-}
-
 a.skip {
   color: #8d3846;
   background-color: #efdede;
