@@ -269,6 +269,8 @@ footer {
 }
 
 .wrapper {
+  -webkit-animation: myAnim 2s ease 0s 1 normal forwards;
+          animation: myAnim 2s ease 0s 1 normal forwards;
   position: relative;
   text-align: center;
   color: #503D42;
@@ -296,7 +298,7 @@ footer {
 
 /* Add a hover style to your images */
 img:hover {
-  border: 4px dashed lightblue;
+  border: 2px dashed lightblue;
 }
 
 img:nth-child(3n+0):hover {
@@ -445,7 +447,7 @@ img:nth-child(3n+0):hover {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 400px) {
   main {
     background-image: url(../images/solid-color-image.png);
     -webkit-filter: grayscale(5%);
@@ -509,5 +511,55 @@ a.skip:focus {
   position: absolute;
   top: 50px;
   left: 0px;
+}
+
+@-webkit-keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.flip-card {
+  -webkit-perspective: 40rem;
+          perspective: 40rem;
+}
+
+.flip-card-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: var(--time) transform;
+  transition: var(--time) transform;
+}
+
+.card:hover .flip-card-inner {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  min-width: 100%;
+}
+
+.flip-card-back {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
 }
 /*# sourceMappingURL=style.css.map */
